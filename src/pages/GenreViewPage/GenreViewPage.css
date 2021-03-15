@@ -1,0 +1,11 @@
+.Genre-Page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Genre-Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -8,13 +8,11 @@ exports[`GenreHeader should match the snapshot 1`] = `
     <img
       alt="genre"
       class="Genre-Image"
-      src="./assets/genre-bollywood.png"
+      src="./assets/genre-undefined.png"
     />
     <div
       class="Genre-Indicator"
-    >
-      Bollywood
-    </div>
+    />
   </div>
 </div>
 `;
