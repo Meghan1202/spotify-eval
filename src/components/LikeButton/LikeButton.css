@@ -1,0 +1,9 @@
+.Like-Button-Container {
+  width: 1rem;
+  height: 1rem;
+}
+
+.centered {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
