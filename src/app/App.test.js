@@ -1,18 +1,20 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import api from '../utils/api';
 import { mockGenre, mockSongs } from '../mockdata/mockData';
 
 describe(App.name, () => {
   beforeEach(() => {
-    jest.spyOn(api, 'getSongsData').mockResolvedValue(mockSongs);
-    jest.spyOn(api, 'getRecordsBasedOnGenres').mockResolvedValue(mockGenre);
+    jest.spyOn(api, 'getSongsData').mockResolvedValueOnce(mockSongs).mockResolvedValueOnce(null);
+    jest.spyOn(api, 'getRecordsBasedOnGenres').mockResolvedValue(mockGenre).mockResolvedValueOnce(null);
   });
   afterEach(() => {
     jest.clearAllMocks();
   });
-  test('renders learn react link', () => {
-    render(<App />);
+  test('should match the snapshot', () => {
+    const { container } = render(<BrowserRouter><App /></BrowserRouter>);
+    expect(container).toMatchSnapshot();
   });
 });

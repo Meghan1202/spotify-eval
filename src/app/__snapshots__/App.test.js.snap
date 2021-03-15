@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Nav-Bar-Container"
+    >
+      My  
+      <strong>
+         Record 
+      </strong>
+        Shelf
+    </div>
+    <div
+      class="Landing-Body"
+    >
+      <div
+        class="Landing-Page"
+      >
+        <p>
+          :(
+           
+          <br />
+          Seems a bit empty in here...
+          <br />
+        </p>
+        <a
+          class="Sync-Buton"
+          href="/allSongs"
+        >
+          Sync
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
