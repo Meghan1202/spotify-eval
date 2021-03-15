@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom';
 import './LandingPage.css';
 
 const LandingPage = ({ getSongs }) => (
-  <div className="Landing-Page">
-    <p>
-      :(
-      {' '}
-      <br />
-      Seems a bit empty in here...
-      <br />
-    </p>
-    <Link to="/allSongs" className="Sync-Buton" type="button" onClick={() => { getSongs(); }}>Sync</Link>
+  <div className="Landing-Body">
+    <div className="Landing-Page">
+      <p>
+        :(
+        {' '}
+        <br />
+        Seems a bit empty in here...
+        <br />
+      </p>
+      <Link to="/allSongs" className="Sync-Buton" onClick={() => { getSongs(); }}>Sync</Link>
+    </div>
   </div>
 );
 LandingPage.propTypes = {
