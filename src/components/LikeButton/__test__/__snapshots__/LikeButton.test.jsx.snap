@@ -5,16 +5,15 @@ exports[`LikeButton should match the snapshot 1`] = `
   <div
     class="Like-Button-Container"
   >
-    <img
-      alt="Heart"
+    <input
+      alt="Like"
       class="Heart-Button"
-      src="./assets/red-heart.svg"
+      src="./assets/gray-heart.svg"
+      type="image"
     />
     <div
       class="centered"
-    >
-      1
-    </div>
+    />
   </div>
 </div>
 `;

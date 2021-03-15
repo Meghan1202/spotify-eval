@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import App from '../App';
@@ -13,8 +13,8 @@ describe(App.name, () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
-  test('should match the snapshot', () => {
-    const { container } = render(<BrowserRouter><App /></BrowserRouter>);
+  test('should match the snapshot', async () => {
+    const { container } = await waitFor(() => render(<BrowserRouter><App /></BrowserRouter>));
     expect(container).toMatchSnapshot();
   });
 });

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenreViewPage should match the snapshot 1`] = `
+<div>
+  <div
+    class="Genre-Page"
+  >
+    <div
+      class="Genre-Page-Header"
+    >
+      <h1>
+        genres
+      </h1>
+      <a
+        href="/allSongs"
+      >
+        <img
+          alt="Toggle View"
+          src="./assets/icon-grid.svg"
+        />
+      </a>
+    </div>
+    <div
+      class="Genre-Header-Container"
+    >
+      <img
+        alt="genre"
+        class="Genre-Image"
+        src="./assets/genre-genre_name.png"
+      />
+      <div
+        class="Genre-Indicator"
+      >
+        genre_name
+      </div>
+    </div>
+    <div
+      class="Genre-Container"
+    >
+      <div
+        class="Card-Container-0"
+      >
+        <img
+          alt="poster"
+          class="Image-Container"
+          src="abc.com"
+        />
+        <p
+          class="Song-Name"
+        >
+          song_name
+        </p>
+        <span
+          class="Artist-Name"
+        >
+          abc
+        </span>
+        <div
+          class="Like-Button-Container"
+        >
+          <input
+            alt="Like"
+            class="Heart-Button"
+            src="./assets/red-heart.svg"
+            type="image"
+          />
+          <div
+            class="centered"
+          >
+            1
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
