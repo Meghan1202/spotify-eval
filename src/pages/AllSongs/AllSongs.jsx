@@ -16,7 +16,7 @@ const AllSongs = ({
           toggleView();
         }}
       >
-        <img src="./assets/icon-genre.svg" alt="Toggle View" />
+        <img data-testid="Toggle-View" src="./assets/icon-genre.svg" alt="Toggle View" />
       </Link>
     </div>
     <div className="Records-Container">

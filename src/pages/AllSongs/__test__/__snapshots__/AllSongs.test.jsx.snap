@@ -16,6 +16,7 @@ exports[`AllSongs should match the snapshot 1`] = `
       >
         <img
           alt="Toggle View"
+          data-testid="Toggle-View"
           src="./assets/icon-genre.svg"
         />
       </a>

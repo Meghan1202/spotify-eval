@@ -17,7 +17,7 @@ const GenreViewPage = ({
           toggleView();
         }}
       >
-        <img src="./assets/icon-grid.svg" alt="Toggle View" />
+        <img data-testid="Toggle-View" src="./assets/icon-grid.svg" alt="Toggle View" />
       </Link>
     </div>
     {
