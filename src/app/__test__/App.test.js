@@ -1,5 +1,5 @@
 import {
-  render, waitFor, screen, fireEvent, act,
+  render, waitFor,
 } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
