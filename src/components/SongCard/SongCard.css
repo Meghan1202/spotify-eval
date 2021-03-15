@@ -1,0 +1,18 @@
+.Card-Container {
+  background-color: #dfdfdf;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  padding: 0.625rem;
+  margin: 0.3rem;
+}
+
+.Image-Container {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+}
+
+.Song-Name {
+  color: black;
+}
