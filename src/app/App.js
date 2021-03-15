@@ -12,10 +12,8 @@ function App() {
   const [genreData, setGenreData] = useState({});
 
   const updateSongs = (id, currentState) => {
-    let genre = '';
     const songsModified = songs.map((song) => {
       if (song.id === id) {
-        genre = song.genre.name;
         return {
           ...song,
           likes: currentState ? song.likes + 1 : song.likes - 1,
@@ -24,18 +22,8 @@ function App() {
       }
       return song;
     });
-    const genreDataModified = { ...genreData };
-    genreDataModified[genre] = genreDataModified[genre].map((song) => {
-      if (song.id === id) {
-        genre = song.genre.name;
-        return {
-          ...song,
-          likes: currentState ? song.likes + 1 : song.likes - 1,
-          isLikedAlready: currentState,
-        };
-      }
-      return song;
-    });
+    const genres = api.getRecordsBasedOnGenres(songsModified);
+    const genreDataModified = { ...genres };
     setSongs(songsModified);
     setGenreData(genreDataModified);
   };
@@ -49,6 +37,7 @@ function App() {
     const songsData = await api.getSongsData();
     setSongs(songsData);
   };
+
   return (
     <div className="App">
       <NavBar />
@@ -65,16 +54,7 @@ function App() {
         ) : <Route path="/"><LandingPage getSongs={getSongs} /></Route>
       }
       <Switch>
-        {/* <Route path="/allSongs">
-          <AllSongs
-            songs={songs}
-            toggleView={getGenre}
-            patchLike={api.patchSongLikeData}
-            updateSongs={updateSongs}
-          />
-        </Route> */}
         <Route path="/genre"><GenreViewPage genreData={genreData} patchLike={api.patchSongLikeData} updateSongs={updateSongs} toggleView={getSongs} /></Route>
-        {/* <Route path="/"><LandingPage getSongs={getSongs} /></Route> */}
       </Switch>
     </div>
   );
