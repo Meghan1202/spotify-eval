@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllSongs should match the snapshot 1`] = `
+<div>
+  <div
+    class="All-Song-Container"
+  >
+    <div
+      class="Page-Header"
+    >
+      <h1>
+        all songs
+      </h1>
+      <a
+        href="/genre"
+      >
+        <img
+          alt="Toggle View"
+          src="./assets/icon-genre.svg"
+        />
+      </a>
+    </div>
+    <div
+      class="Records-Container"
+    >
+      <div
+        class="Card-Container-0"
+      >
+        <img
+          alt="poster"
+          class="Image-Container"
+          src="abc.com"
+        />
+        <p
+          class="Song-Name"
+        >
+          song_name
+        </p>
+        <span
+          class="Artist-Name"
+        >
+          abc
+        </span>
+        <div
+          class="Like-Button-Container"
+        >
+          <input
+            alt="Like"
+            class="Heart-Button"
+            src="./assets/red-heart.svg"
+            type="image"
+          />
+          <div
+            class="centered"
+          >
+            1
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,9 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App';
-import api from '../utils/api';
-import { mockGenre, mockSongs } from '../mockdata/mockData';
+import App from '../App';
+import api from '../../utils/api';
+import { mockGenre, mockSongs } from '../../mockdata/mockData';
 
 describe(App.name, () => {
   beforeEach(() => {
