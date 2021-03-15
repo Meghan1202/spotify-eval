@@ -8,12 +8,14 @@ exports[`LikeButton should match the snapshot 1`] = `
     <input
       alt="Like"
       class="Heart-Button"
-      src="./assets/gray-heart.svg"
+      src="./assets/red-heart.svg"
       type="image"
     />
     <div
       class="centered"
-    />
+    >
+      1
+    </div>
   </div>
 </div>
 `;
