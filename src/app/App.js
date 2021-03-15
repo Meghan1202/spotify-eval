@@ -41,7 +41,7 @@ function App() {
   };
 
   const getGenre = async () => {
-    const genres = await api.getRecordsBasedOnGenres();
+    const genres = await api.getRecordsBasedOnGenres(songs);
     setGenreData(genres);
   };
 
@@ -52,17 +52,29 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      {
+        songs.length ? (
+          <Route path="/allSongs">
+            <AllSongs
+              songs={songs}
+              toggleView={getGenre}
+              patchLike={api.patchSongLikeData}
+              updateSongs={updateSongs}
+            />
+          </Route>
+        ) : <Route path="/"><LandingPage getSongs={getSongs} /></Route>
+      }
       <Switch>
-        <Route path="/allSongs">
+        {/* <Route path="/allSongs">
           <AllSongs
             songs={songs}
             toggleView={getGenre}
             patchLike={api.patchSongLikeData}
             updateSongs={updateSongs}
           />
-        </Route>
+        </Route> */}
         <Route path="/genre"><GenreViewPage genreData={genreData} patchLike={api.patchSongLikeData} updateSongs={updateSongs} toggleView={getSongs} /></Route>
-        <Route path="/"><LandingPage getSongs={getSongs} /></Route>
+        {/* <Route path="/"><LandingPage getSongs={getSongs} /></Route> */}
       </Switch>
     </div>
   );

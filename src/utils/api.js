@@ -28,9 +28,9 @@ const getSongsData = async () => {
   return songsData;
 };
 
-const getRecordsBasedOnGenres = async () => {
+const getRecordsBasedOnGenres = async (songs) => {
   const genreData = {};
-  const songs = await getSongsData();
+  // const songs = await getSongsData();
   songs.forEach((song) => {
     if (genreData[song.genre.name]) {
       genreData[song.genre.name] = [...genreData[song.genre.name], song];
