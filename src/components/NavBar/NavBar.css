@@ -1,0 +1,8 @@
+.Nav-Bar-Container {
+    display: flex;
+    background-color: #38497E;
+    color: white;
+    height: 2rem;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
