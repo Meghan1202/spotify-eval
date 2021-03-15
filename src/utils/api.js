@@ -1,7 +1,5 @@
 const axios = require('axios');
-
-const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxN2I2NjI4ZC0xZWJkLTRjMGItOGU3ZS0yZTFlYTgwYzc3MzEiLCJuYW1lIjoiTWVnaGFuYSIsInJvbGUiOjAsInN1YmplY3QiOiJUZWNoIFVuaXYgMjAyMSIsImVhc3Rlcl9lZ2ciOiJHb29kIGx1Y2shIiwiYXVkIjoibXVzaWNyZWNvcmRzLnRlY2h1bml2LmNvbSIsIm5iZiI6MTYxNTc4NDQzNCwiZXhwIjoxNjE4Mzc2NDM0LCJpYXQiOjE2MTU3ODQ0MzQsImlzcyI6Ik11c2ljIFJlY29yZHMifQ.zndapgDdsHymhHBydkTyQcrA6rmhSEJtoJ3PtGQVoQs';
-const apiBaseURL = '/';
+const { apiBaseURL, token } = require('../Constants/Constant');
 
 const apiInstance = axios.create({
   baseURL: apiBaseURL,
@@ -54,4 +52,5 @@ module.exports = {
   getLikesDataForSong,
   patchSongLikeData,
   getRecordsBasedOnGenres,
+  apiInstance,
 };
