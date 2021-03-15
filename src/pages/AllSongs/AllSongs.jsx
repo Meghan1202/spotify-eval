@@ -8,19 +8,22 @@ const AllSongs = ({
   songs, toggleView, patchLike, updateSongs,
 }) => (
   <div className="All-Song-Container">
-    <h2>all songs</h2>
-    <Link
-      to="/genre"
-      onClick={() => {
-        toggleView();
-      }}
-    >
-      toggleView
-    </Link>
+    <div className="Page-Header">
+      <h1>all songs</h1>
+      <Link
+        to="/genre"
+        onClick={() => {
+          toggleView();
+        }}
+      >
+        <img src="./assets/icon-genre.svg" alt="Toggle View" />
+      </Link>
+    </div>
     <div className="Records-Container">
       {
-        songs.map((song) => (
+        songs.map((song, index) => (
           <SongCard
+            theme={index % 2}
             key={song.id}
             name={song.name}
             albumArt={song.albumArtUrl}

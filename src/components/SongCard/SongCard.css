@@ -1,7 +1,18 @@
-.Card-Container {
+.Card-Container-0 {
   display: flex;
   flex-direction: column;
   background-color: #dfdfdf;
+  width: 15rem;
+  height: 16rem;
+  border-radius: 1rem;
+  padding: 0.625rem;
+  margin: 0.3rem;
+}
+
+.Card-Container-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ababab;
   width: 15rem;
   height: 16rem;
   border-radius: 1rem;

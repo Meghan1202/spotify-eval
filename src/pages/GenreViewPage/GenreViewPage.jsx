@@ -9,22 +9,24 @@ const GenreViewPage = ({
   genreData, patchLike, updateSongs, toggleView,
 }) => (
   <div className="Genre-Page">
-    <h2>Genre</h2>
-    <Link
-      to="/allSongs"
-      onClick={() => {
-        toggleView();
-      }}
-    >
-      toggleView
-    </Link>
+    <div className="Genre-Page-Header">
+      <h1>genres</h1>
+      <Link
+        to="/allSongs"
+        onClick={() => {
+          toggleView();
+        }}
+      >
+        <img src="./assets/icon-grid.svg" alt="Toggle View" />
+      </Link>
+    </div>
     {
             Object.keys(genreData).map((genre) => (
               <div>
                 <GenreHeader Genre={genre} />
                 <div className="Genre-Container">
                   {
-                    genreData[genre].map((song) => (
+                    genreData[genre].map((song, index) => (
                       <SongCard
                         name={song.name}
                         albumArt={song.albumArtUrl}
@@ -34,6 +36,7 @@ const GenreViewPage = ({
                         likes={song.likes}
                         patchLike={patchLike}
                         updateSongs={updateSongs}
+                        theme={index % 2}
                       />
                     ))
                     }

@@ -4,9 +4,9 @@ import './SongCard.css';
 import LikeButton from '../LikeButton/LikeButton';
 
 const SongCard = ({
-  name, albumArt, artist, currentState, likes, id, patchLike, updateSongs,
+  name, albumArt, artist, currentState, likes, id, patchLike, updateSongs, theme,
 }) => (
-  <div className="Card-Container">
+  <div className={`Card-Container-${theme}`}>
     <img className="Image-Container" src={albumArt} alt="poster" />
     <p className="Song-Name">{name}</p>
     <span className="Artist-Name">{artist}</span>
@@ -29,6 +29,7 @@ SongCard.propTypes = {
   id: PropTypes.string.isRequired,
   patchLike: PropTypes.func.isRequired,
   updateSongs: PropTypes.func.isRequired,
+  theme: PropTypes.number.isRequired,
 };
 
 export default SongCard;
