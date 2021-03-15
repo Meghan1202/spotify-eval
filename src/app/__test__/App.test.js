@@ -17,4 +17,7 @@ describe(App.name, () => {
     const { container } = await waitFor(() => render(<BrowserRouter><App /></BrowserRouter>));
     expect(container).toMatchSnapshot();
   });
+  test('should route to GenreViewPage', async () => {
+    await waitFor(() => render(<BrowserRouter><App /></BrowserRouter>));
+  });
 });

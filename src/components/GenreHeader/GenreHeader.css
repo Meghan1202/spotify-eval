@@ -1,15 +1,15 @@
 .Genre-Header-Container {
     position: relative;
-    height: 5rem;
-    width: 7rem;
+    height: 7rem;
+    width: 9rem;
     display: flex;
     margin: 0.625rem;
 }
 
 .Genre-Image {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 5rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 7rem;
 }
 
 .Genre-Indicator {
@@ -20,6 +20,6 @@
     height: fit-content;
     padding: 0.62rem;
     position: absolute;
-    bottom: 2px;
-    right: 1px;
+    bottom: 35%;
+    right: 10%;
 }

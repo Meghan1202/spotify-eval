@@ -54,7 +54,9 @@ function App() {
         ) : <Route path="/"><LandingPage getSongs={getSongs} /></Route>
       }
       <Switch>
-        <Route path="/genre"><GenreViewPage genreData={genreData} patchLike={api.patchSongLikeData} updateSongs={updateSongs} toggleView={getSongs} /></Route>
+        {
+          songs.length ? <Route path="/genre"><GenreViewPage genreData={genreData} patchLike={api.patchSongLikeData} updateSongs={updateSongs} toggleView={getSongs} /></Route> : <></>
+        }
       </Switch>
     </div>
   );
