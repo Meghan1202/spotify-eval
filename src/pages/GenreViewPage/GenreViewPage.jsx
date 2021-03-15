@@ -1,12 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import GenreHeader from '../../components/GenreHeader/GenreHeader';
 import SongCard from '../../components/SongCard/SongCard';
 import './GenreViewPage.css';
 
-const GenreViewPage = ({ genreData }) => (
+const GenreViewPage = ({
+  genreData, patchLike, updateSongs, toggleView,
+}) => (
   <div className="Genre-Page">
     <h2>Genre</h2>
+    <Link
+      to="/allSongs"
+      onClick={() => {
+        toggleView();
+      }}
+    >
+      toggleView
+    </Link>
     {
             Object.keys(genreData).map((genre) => (
               <div>
@@ -18,6 +29,11 @@ const GenreViewPage = ({ genreData }) => (
                         name={song.name}
                         albumArt={song.albumArtUrl}
                         artist={song.artist.name}
+                        currentState={song.isLikedAlready}
+                        id={song.id}
+                        likes={song.likes}
+                        patchLike={patchLike}
+                        updateSongs={updateSongs}
                       />
                     ))
                     }
@@ -29,7 +45,10 @@ const GenreViewPage = ({ genreData }) => (
 );
 
 GenreViewPage.propTypes = {
-  genreData: PropTypes.arrayOf(Object).isRequired,
+  genreData: PropTypes.objectOf(Object).isRequired,
+  patchLike: PropTypes.func.isRequired,
+  updateSongs: PropTypes.func.isRequired,
+  toggleView: PropTypes.func.isRequired,
 };
 
 export default GenreViewPage;

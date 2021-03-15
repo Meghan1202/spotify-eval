@@ -1,6 +1,9 @@
 .Genre-Header-Container {
-    height: 10rem;
-    width: 20rem;
+    position: relative;
+    height: 5rem;
+    width: 7rem;
+    display: flex;
+    margin: 0.625rem;
 }
 
 .Genre-Image {
@@ -14,5 +17,9 @@
     color: white;
     border-radius: 1rem;
     width: fit-content;
+    height: fit-content;
     padding: 0.62rem;
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
 }
