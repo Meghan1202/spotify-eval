@@ -22,12 +22,13 @@ const GenreViewPage = ({
     </div>
     {
             Object.keys(genreData).map((genre) => (
-              <div>
-                <GenreHeader Genre={genre} />
+              <React.Fragment key={genre}>
+                <GenreHeader key={genre} Genre={genre} />
                 <div className="Genre-Container">
                   {
                     genreData[genre].map((song, index) => (
                       <SongCard
+                        key={song.id}
                         name={song.name}
                         albumArt={song.albumArtUrl}
                         artist={song.artist.name}
@@ -41,7 +42,7 @@ const GenreViewPage = ({
                     ))
                     }
                 </div>
-              </div>
+              </React.Fragment>
             ))
         }
   </div>
