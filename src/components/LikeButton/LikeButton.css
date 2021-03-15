@@ -1,9 +1,17 @@
 .Like-Button-Container {
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
+  align-self: flex-end;
 }
 
 .centered {
-  position: absolute;
-  transform: translate(-50%, -50%);
+  position: relative;
+  bottom: 50%;
+  right: 50%;
+}
+
+.Heart-Button {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
 }

@@ -1,0 +1,18 @@
+.Genre-Header-Container {
+    height: 10rem;
+    width: 20rem;
+}
+
+.Genre-Image {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+}
+
+.Genre-Indicator {
+    background-color: #4C63AA;
+    color: white;
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 0.62rem;
+}

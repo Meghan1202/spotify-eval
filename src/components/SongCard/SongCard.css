@@ -1,4 +1,6 @@
 .Card-Container {
+  display: flex;
+  flex-direction: column;
   background-color: #dfdfdf;
   width: 15rem;
   height: 15rem;
@@ -11,8 +13,10 @@
   height: 10rem;
   width: 10rem;
   border-radius: 10rem;
+  align-self: center;
 }
 
 .Song-Name {
   color: black;
+  align-self: flex-start;
 }

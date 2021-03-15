@@ -1,20 +1,30 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../components/NavBar/NavBar';
 import SongCard from '../components/SongCard/SongCard';
-// import api from '../utils/api';
+import api from '../utils/api';
 
 function App() {
-  // const getSongs = async () => {
-  //   const songs = await api.getSongsData();
-  //   console.log(songs);
-  //   return songs;
-  // };
-
+  const [songs, setSongs] = useState([]);
+  useEffect(async () => {
+    const songsData = await api.getSongsData();
+    setSongs(songsData);
+  }, []);
   return (
     <div className="App">
       <NavBar />
-      <SongCard key={1} name="aaa" albumArt="aaa" />
+      <div className="Records-Container">
+        {
+        songs.map((song) => (
+          <SongCard
+            key={song.id}
+            name={song.name}
+            albumArt={song.albumArtUrl}
+            artist={song.artist.name}
+          />
+        ))
+      }
+      </div>
     </div>
   );
 }

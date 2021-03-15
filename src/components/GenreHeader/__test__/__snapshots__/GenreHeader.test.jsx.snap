@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenreHeader should match the snapshot 1`] = `
+<div>
+  <div
+    class="Genre-Header-Container"
+  >
+    <img
+      alt="genre"
+      class="Genre-Image"
+      src="./assets/genre-bollywood.png"
+    />
+    <div
+      class="Genre-Indicator"
+    >
+      Bollywood
+    </div>
+  </div>
+</div>
+`;

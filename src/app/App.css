@@ -8,6 +8,12 @@
   }
 }
 
+.Records-Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
