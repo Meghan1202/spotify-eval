@@ -3,30 +3,37 @@
 exports[`SongCard Should match the snapshot 1`] = `
 <div>
   <div
-    class="Card-Container-undefined"
+    class="Card-Container-1"
   >
     <img
       alt="poster"
       class="Image-Container"
+      src="Url"
     />
     <p
       class="Song-Name"
-    />
+    >
+      songe_Name
+    </p>
     <span
       class="Artist-Name"
-    />
+    >
+      Artist_Name
+    </span>
     <div
       class="Like-Button-Container"
     >
       <input
         alt="Like"
         class="Heart-Button"
-        src="./assets/gray-heart.svg"
+        src="./assets/red-heart.svg"
         type="image"
       />
       <div
         class="centered"
-      />
+      >
+        1
+      </div>
     </div>
   </div>
 </div>

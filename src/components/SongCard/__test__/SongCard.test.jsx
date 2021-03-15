@@ -4,7 +4,17 @@ import SongCard from '../SongCard';
 
 describe(SongCard.name, () => {
   test('Should match the snapshot', () => {
-    const { container } = render(<SongCard />);
+    const { container } = render(<SongCard
+      name="songe_Name"
+      albumArt="Url"
+      artist="Artist_Name"
+      currentState
+      likes={1}
+      id="abc"
+      patchLike={jest.fn()}
+      updateSongs={jest.fn()}
+      theme={1}
+    />);
     expect(container).toMatchSnapshot();
   });
 });
