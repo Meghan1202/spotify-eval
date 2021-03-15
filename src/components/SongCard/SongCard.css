@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: #dfdfdf;
   width: 15rem;
-  height: 15rem;
+  height: 16rem;
   border-radius: 1rem;
   padding: 0.625rem;
   margin: 0.3rem;
@@ -18,5 +18,10 @@
 
 .Song-Name {
   color: black;
+  align-self: flex-start;
+  margin-bottom: 0%;
+}
+
+.Artist-Name {
   align-self: flex-start;
 }

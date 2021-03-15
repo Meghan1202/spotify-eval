@@ -2,16 +2,16 @@
   width: 2rem;
   height: 2rem;
   align-self: flex-end;
+  position: relative;
 }
 
 .centered {
-  position: relative;
-  bottom: 50%;
-  right: 50%;
+  position: absolute;
+  bottom: 30%;
+  right: 35%;
 }
 
 .Heart-Button {
-    position: absolute;
     width: 2rem;
     height: 2rem;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import SongCard from '../../components/SongCard/SongCard';
+import './AllSongs.css';
 
 const AllSongs = ({
   songs, toggleView, patchLike, updateSongs,

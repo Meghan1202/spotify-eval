@@ -9,7 +9,7 @@ const SongCard = ({
   <div className="Card-Container">
     <img className="Image-Container" src={albumArt} alt="poster" />
     <p className="Song-Name">{name}</p>
-    <span className="Song-Name">{artist}</span>
+    <span className="Artist-Name">{artist}</span>
     <LikeButton
       currentState={currentState}
       likes={likes}
