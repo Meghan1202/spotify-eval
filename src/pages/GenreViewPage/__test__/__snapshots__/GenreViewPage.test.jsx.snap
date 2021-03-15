@@ -45,11 +45,11 @@ exports[`GenreViewPage should match the snapshot 1`] = `
           class="Image-Container"
           src="abc.com"
         />
-        <p
+        <div
           class="Song-Name"
         >
           song_name
-        </p>
+        </div>
         <div
           class="Card-Footer"
         >
