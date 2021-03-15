@@ -1,8 +1,6 @@
 .Like-Button-Container {
   width: 2rem;
   height: 2rem;
-  align-self: flex-end;
-  justify-self: flex-end;
   position: relative;
 }
 

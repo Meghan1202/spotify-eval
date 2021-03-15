@@ -8,15 +8,17 @@ const SongCard = ({
 }) => (
   <div className={`Card-Container-${theme}`}>
     <img className="Image-Container" src={albumArt} alt="poster" />
-    <p className="Song-Name">{name}</p>
-    <span className="Artist-Name">{artist}</span>
-    <LikeButton
-      currentState={currentState}
-      likes={likes}
-      id={id}
-      patchLike={patchLike}
-      updateSongs={updateSongs}
-    />
+    <div className="Song-Name">{name}</div>
+    <div className="Card-Footer">
+      <span className="Artist-Name">{artist}</span>
+      <LikeButton
+        currentState={currentState}
+        likes={likes}
+        id={id}
+        patchLike={patchLike}
+        updateSongs={updateSongs}
+      />
+    </div>
   </div>
 );
 

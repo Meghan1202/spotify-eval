@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: #dfdfdf;
   width: 15rem;
-  height: 16rem;
+  height: 15rem;
   border-radius: 1rem;
   padding: 0.625rem;
   margin: 0.3rem;
@@ -14,7 +14,7 @@
   flex-direction: column;
   background-color: #ababab;
   width: 15rem;
-  height: 16rem;
+  height: 15rem;
   border-radius: 1rem;
   padding: 0.625rem;
   margin: 0.3rem;
@@ -30,9 +30,22 @@
 .Song-Name {
   color: black;
   align-self: flex-start;
-  margin-bottom: 0%;
+  font-weight: lighter;
+  margin-top: 0.6rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 13rem;
+  text-align: left;
 }
 
 .Artist-Name {
   align-self: flex-start;
+  font-weight: bold;
+  font-size: small;
+}
+
+.Card-Footer {
+  display: flex;
+  justify-content: space-between;
 }

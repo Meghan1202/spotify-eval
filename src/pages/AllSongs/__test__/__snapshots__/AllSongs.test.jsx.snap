@@ -36,24 +36,28 @@ exports[`AllSongs should match the snapshot 1`] = `
         >
           song_name
         </p>
-        <span
-          class="Artist-Name"
-        >
-          abc
-        </span>
         <div
-          class="Like-Button-Container"
+          class="Card-Footer"
         >
-          <input
-            alt="Like"
-            class="Heart-Button"
-            src="./assets/red-heart.svg"
-            type="image"
-          />
-          <div
-            class="centered"
+          <span
+            class="Artist-Name"
           >
-            1
+            abc
+          </span>
+          <div
+            class="Like-Button-Container"
+          >
+            <input
+              alt="Like"
+              class="Heart-Button"
+              src="./assets/red-heart.svg"
+              type="image"
+            />
+            <div
+              class="centered"
+            >
+              1
+            </div>
           </div>
         </div>
       </div>
